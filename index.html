@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header class="title_and_logo">
+      <img src="./assets/Vector.png" alt="logo" class="content__input__logo" />
+      <h1>
+        Encriptador de Texto <strong class="strong_title">(Caesar)</strong>
+      </h1>
+    </header>
+    <main class="content">
+      <section class="content__input">
+        <!---<section class="content__input__logo">
+          
+        </section>-->
+
+        <section class="content__input__text">
+          <textarea
+            id="textarea_input"
+            class="input_text"
+            placeholder="Ingresa tu texto aquí"
+            rows="8"
+            cols="50"
+          ></textarea>
+          <div class="warning-message">
+            <i class="fas fa-exclamation-circle"></i>
+            Solo letras minúsculas y sin acentos
+          </div>
+          <div class="content__input__button">
+            <button onclick="encrypt();" type="button" class="button_encrypt">
+              Encriptar
+            </button>
+            <button onclick="decrypt();" type="button" class="button_decrypt">
+              Desencriptar
+            </button>
+          </div>
+        </section>
+      </section>
+      <section class="output">
+        <div class="output__result__none" style="display: flex">
+          <img
+            src="./assets/img/img1.png"
+            alt=""
+            class="output__result__none__img"
+          />
+          <p class="output__result__none__title">
+            Ningún mensaje fue encontrado
+          </p>
+          <p class="output__result__none__paragraph">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <div class="output__result" style="display: none">
+          <textarea
+            id="textarea_output"
+            class="output__result__paragraph"
+            rows="15"
+            cols="25"
+            readonly
+          ></textarea>
+
+          <button onclick="copy();" type="button" class="button_copy">
+            <i class="fas fa-copy"></i>
+            Copiar
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a href="https://github.com/SabinaPia" target="_blank">
+        <img
+          class="img_footer"
+          src="./assets/img/github.png"
+          alt="GitHub"
+          class="github-logo"
+        />
+      </a>
+      <p>Desarrollado por Joselyn</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

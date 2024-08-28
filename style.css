@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1f2544;
+  color: #ffff;
+}
+
+h1 {
+  margin-top: 25px;
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-family: "Inter", sans-serif;
+  text-shadow: -1px -1px 0 #000,
+    /* Sombra hacia arriba izquierda */ 1px -1px 0 #000,
+    /* Sombra hacia arriba derecha */ -1px 1px 0 #000,
+    /* Sombra hacia abajo izquierda */ 1px 1px 0 #000; /* Sombra hacia abajo derecha */
+}
+.title_and_logo {
+  background: #5e289d;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  border-bottom: 2px solid #5e289d;
+  padding-bottom: 10px;
+}
+
+.strong_title {
+  color: #22d4fd;
+}
+.content {
+  display: flex;
+  align-items: center;
+  margin: 0%;
+  justify-content: space-between;
+}
+.content__input {
+  display: flex;
+}
+.content__input__logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 32px;
+  margin-left: 40px;
+}
+.content__input__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.input_text::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffff;
+}
+.input_text {
+  width: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: #1f2544;
+  color: #ffff;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.warning-message {
+  font-size: 1rem;
+  color: #ced4da;
+  margin-top: 100px;
+}
+
+.warning-message i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.content__input__button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 16px;
+}
+
+.button_encrypt:hover {
+  background-color: #22d4fd;
+  cursor: pointer;
+}
+
+.button_encrypt:active {
+  background-color: #22d4fd;
+  box-shadow: 0 2px #17b4d7;
+  transform: translateY(2px);
+}
+
+.button_encrypt {
+  width: 50%;
+  background-color: #4fc6e1;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 18px 0;
+  border-radius: 24px;
+  border: none;
+}
+
+.button_decrypt:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.button_decrypt:active {
+  background-color: #ffffff;
+  box-shadow: 0 2px #ced4da;
+  transform: translateY(2px);
+}
+
+.button_decrypt {
+  width: 50%;
+  background-color: #ced4da;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 18px 0;
+  border-radius: 24px;
+  border: none;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: 60px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 580px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+}
+
+.output__result__none {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.output__result__none__img {
+  width: 70%;
+}
+
+.output__result__none__title {
+  color: #915bcd;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0px 40px 16px 40px;
+}
+.output__result__none__paragraph {
+  color: #495057;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0px 20px 0px 20px;
+}
+
+.output__result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.output__result__paragraph {
+  color: #495057;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 0px 20px 0px 20px;
+}
+
+.button_copy:hover {
+  cursor: pointer;
+}
+
+.button_copy:active {
+  box-shadow: 0 2px #81689d;
+  transform: translateY(2px);
+}
+.button_copy {
+  width: 300px;
+  background-color: #ffff;
+  color: #81689d;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px 0;
+  border-radius: 24px;
+  border: 3px solid #81689d;
+}
+
+.site-footer {
+  background-color: #5e289d;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.img_footer {
+  width: 2%;
+}
+.site-footer p {
+  color: #000000;
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin: 0px;
+}
+
+@media (max-width: 1400px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input_text {
+    width: 70%;
+    padding-left: 100px;
+  }
+  .content__input__button {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .title_and_logo {
+    justify-content: center;
+  }
+  .button_encrypt {
+    width: 45%;
+  }
+  .button_decrypt {
+    width: 45%;
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input_text {
+    width: 60%;
+    padding-left: 75px;
+  }
+  .button_encrypt {
+    width: 40%;
+  }
+  .button_decrypt {
+    width: 40%;
+  }
+  .output__result__none__img {
+    width: 50%;
+  }
+  .output {
+    width: 60%;
+  }
+}
+
+@media (max-width: 632px) {
+  .input_text {
+    width: 50%;
+    padding-left: 60px;
+  }
+  .button_encrypt {
+    width: 38%;
+  }
+  .button_decrypt {
+    width: 38%;
+  }
+
+  .output__result__none__img {
+    width: 40%;
+  }
+  .output {
+    width: 40%;
+  }
+  .output__result__paragraph {
+    width: 60%;
+  }
+
+  .button_copy {
+    width: 70%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .title_and_logo {
+    gap: 70px;
+  }
+
+  .input_text {
+    font-size: 1.8rem;
+    width: 50%;
+    padding-left: 30px;
+  }
+  .content__input__text {
+    margin-left: 80px;
+  }
+  .content__input__button {
+    flex-direction: column;
+  }
+  .button_encrypt {
+    font-size: 1rem;
+    width: 50%;
+  }
+  .button_decrypt {
+    font-size: 1rem;
+    width: 50%;
+  }
+
+  .output__result__none__img {
+    width: 20%;
+  }
+  .output {
+    width: 50%;
+  }
+
+  .output__result__paragraph {
+    width: 70%;
+  }
+}
