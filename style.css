@@ -197,6 +197,7 @@ h1 {
   outline: none;
   resize: none;
   padding: 0px 20px 0px 20px;
+  width: 65%;
 }
 
 .button_copy:hover {
@@ -208,7 +209,7 @@ h1 {
   transform: translateY(2px);
 }
 .button_copy {
-  width: 300px;
+  width: 235px;
   background-color: #ffff;
   color: #81689d;
   font-family: "Inter", sans-serif;
